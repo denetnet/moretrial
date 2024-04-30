@@ -1,0 +1,9 @@
+.printed-menu img {
+    width: 100%;
+}
+
+.printed-menu h1 {
+    display: flex;
+    justify-content: center;
+    color: brown;
+}

@@ -1,0 +1,16 @@
+.about-us img {
+    display: flex;
+    height: 34vw;
+    margin: 30px auto;
+    justify-content: center;
+    position: relative;
+}
+
+.about-us h1 {
+    display: flex;
+    justify-content: center;
+    color: brown;
+}
+.about-us p {
+    text-align: justify;
+}

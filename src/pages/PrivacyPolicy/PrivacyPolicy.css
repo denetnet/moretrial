@@ -1,0 +1,16 @@
+.privacy-policy h1 {
+    display: flex;
+    justify-content: center;
+    color: brown;
+}
+
+.privacy-policy p {
+    text-align: justify;
+}
+
+.privacy-policy h2 {
+    color: lightcoral;
+}
+.privacy-policy li {
+    list-style-type: none;
+}
