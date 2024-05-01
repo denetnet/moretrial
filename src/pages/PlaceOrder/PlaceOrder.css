@@ -58,5 +58,6 @@
 
     .place-order-left .multi-fields {
         flex-direction: column;
+        gap: 0px;
     }
 }
