@@ -22,8 +22,8 @@ const Footer = () => {
             <a href="https://www.instagram.com/sweetconfectionspastryshop/">
               <img src={assets.insta_icon} alt="instagram icon" />
             </a>
-            <a href="https://twitter.com/chefcalvinb">
-              <img src={assets.linkedin_icon} alt="linkedin icon" />
+            <a href="https://twitter.com/SCPastries">
+              <img src={assets.twitter_icon} alt="twitter icon" />
             </a>
           </div>
         </div>

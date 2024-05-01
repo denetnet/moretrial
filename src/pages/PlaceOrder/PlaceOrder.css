@@ -55,4 +55,8 @@
     .place-order-right {
         margin-top: 0px;
     }
+
+    .place-order-left .multi-fields {
+        flex-direction: column;
+    }
 }
