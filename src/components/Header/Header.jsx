@@ -1,6 +1,7 @@
 import React from "react";
-import "./Header.css";
+import "./Header.css"; // Import header styles
 
+// Header component
 const Header = () => {
   return (
     <div className="header">
@@ -11,6 +12,8 @@ const Header = () => {
           Sandwiches, Pastas, Cakes, Pastries & Custom Cakes.
         </p>
         <a href="#explore-menu">
+          {" "}
+          {/* Link to menu section */}
           <button>View Menu</button>
         </a>
       </div>
@@ -18,4 +21,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Header; //Export Header component

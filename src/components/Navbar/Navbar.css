@@ -1,26 +1,30 @@
+/* navbar container styles */
 .navbar {
     padding: 20px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    z-index: 1;
-    top: 0;
+    position: sticky; /* Sticky position so that navbar would stay on top*/
+    z-index: 1; /* Set stacking order so navbar would stay above all other elements in page*/
+    top: 0; /* 0 position from top */
     background-color: white;
 }
 
+/* Logo styles */
 .navbar .logo {
     width: 200px;
 }
 
+/* Styles of navbar menu at the center */
 .navbar-menu {
     display: flex;
-    list-style: none;
+    list-style: none; /* No list style */
     gap: 50px;
     color: #49557e;
     font-size: 15px;
 }
 
+/* Style of navbar elements on the right side */
 .navbar-right {
     display: flex;
     align-items: center;
@@ -28,6 +32,7 @@
 
 }
 
+/* Sign In button styles */
 .navbar button {
     background: transparent;
     font-size: 15px;
@@ -39,15 +44,18 @@
     transition: 0.3s;
 }
 
+/* Sign In button hover effect: changing color */
 .navbar button:hover {
     background-color: #fff4f2;
 }
 
+/* Active menu item styles: underline */
 .navbar .active {
     padding-bottom: 2px;
     border-bottom: 2px solid #49557e;
 }
 
+/* navbar item list style */
 .navbar li {
     cursor: pointer;
 }
@@ -56,6 +64,7 @@
     position: relative;
 }
 
+/* Dot on the upper right side of food basket styles */
 .navbar-search-icon .dot {
     position: absolute;
     min-width: 10px;
@@ -66,7 +75,8 @@
     right: -5px;
 }
 
-@media (max-width: 1050px) {
+/* Media queries for medium screens */
+@media (max-width: 1080px) {
     .navbar .logo {
         width: 200px;
 
@@ -89,7 +99,7 @@
         padding: 8px 25px;
     }
 }
-
+/* Media queries for small screens */
 @media (max-width: 900px) {
     .navbar .logo {
         width: 140px;
@@ -114,7 +124,7 @@
         font-size: 15px;
     }
 }
-
+/* Media queries for smaller screens */
 @media (max-width: 750px) {
     .navbar-menu {
         display: none;

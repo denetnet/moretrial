@@ -1,43 +1,54 @@
+/* Cart container style */
 .cart {
     margin-top: 100px;
 }
 
+/* Cart items heading styles */
 .cart-items h2 {
     font-size: 30px;
     font-weight: 600;
 }
+
+/* Cart items title grid styles */
 .cart-items-title {
     display: grid;
-    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 1fr; /* Grid columns fractional unit sizes */
     align-items: center;
-    justify-items: center;
+    justify-items: center; 
     color: grey;
     font-size: max(1vw, 12px);
 }
 
+/* Cart items item name styles */
 .cart-items-item {
     margin: 10px 0px;
     color: black;
 }
 
+/* Cart items item image style */
 .cart-items-item img {
     width: 100px;
 }
 
+/* Horizontal rule style*/
 .cart hr {
     height: 1px;
     background-color: #e2e2e2;
-    border: none;
+    border: none;  /* No border */
 }
 
+/* Add cursor pointer for the cross icon for removing items */
 .cart-items-item .cross {
     cursor: pointer;
 }
 
+/* Add more items button container styles */
 .cart-add-more {
     display: flex;
     justify-content: center;
 }
+
+/* Add more items button styles */
 .cart-add-more button{
     margin-top: 30px;
     width: max(15vw, 150px);
@@ -48,6 +59,8 @@
     color: #eae3d1;
     border-radius: 4px;
 }
+
+/* Cart bottom section styles */
 .cart-bottom {
     margin-top: 80px;
     display: flex;
@@ -55,6 +68,7 @@
     gap: max(12vw, 20px);
 }
 
+/* Cart total payment details section styles */
 .cart-total {
     display: flex;
     flex: 1;
@@ -62,16 +76,19 @@
     gap: 20px;
 }
 
+/* Cart total payment details (subtotal, delivery fee, and total) sytles */
 .cart-total-details {
     display: flex;
     justify-content: space-between;
     color: #555;
 }
 
+/* Cart total horizontal rule styles */
 .cart-total hr {
     margin: 10px 0px;
 }
 
+/* Proceed to Checkout button styles*/
 .cart-total button {
     border: none;
     color: white;
@@ -83,14 +100,17 @@
     cursor: pointer;
 }
 
+/* Cart promo code section styles */
 .cart-promocode {
     flex:1;
 }
 
+/* Cart promo code paragraph element style*/
 .cart-promocode p {
     color:#444444;
 }
 
+/* Cart promo code input section styles */
 .cart-promocode-input {
     margin-top: 10px;
     display: flex;
@@ -100,6 +120,7 @@
     border-radius: 4px;
 }
 
+/* Cart promo code input field styles */
 .cart-promocode-input input {
     background: transparent;
     border: none;
@@ -107,6 +128,7 @@
     padding-left: 10px;
 }
 
+/* Cart promo code Apply button */
 .cart-promocode-input button {
     width: max(10vw, 150px);
     padding: 12px 5px;
@@ -116,19 +138,23 @@
     border-radius: 4px;
 }
 
+/* Media query for smaller screens */
 @media (max-width: 750px) {
     .cart-bottom {
-        flex-direction: column-reverse;
+        flex-direction: column-reverse; /* Reverse column direction */
     }
 
+    /* Align promo code section to start */
     .cart-promocode {
         justify-content: start;
     }
 
+    /* Reduce image width of cart items */
     .cart-items-item img {
         width: 50px;
     }
 
+    /* Adjust grid columns */
     .cart-items-title {
         display: grid;
         grid-template-columns: 1.3fr 1.3fr 1fr 1fr 1fr 1fr;

@@ -1,50 +1,56 @@
+/* Header container styles */
 .header {
-    height: 34vw;
+    height: 34vw; /* Set height relative to viewport width */
     margin: 30px auto;
-    background: url('/header_img.png') no-repeat;
-    background-size: contain;
-    position: relative;
+    background: url('/header_img.png') no-repeat; /* Background image */
+    background-size: contain; /* Ensure background image is contained within element */
+    position: relative; /* Position relative to its normal position */
 }
 
+/* Styles for contents header contents */
 .header-contents {
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: start; /* Align items at the start */
     gap: 1.2vw;
     max-width: 50%;
-    bottom: 20%;
-    left: 5vw;
-    animation: fadeIn 3s;
+    bottom: 20%; /* Position from bottom */
+    left: 5vw; /* Position from left */
+    animation: fadeIn 3s; /* Add fade in animation */
 }
-
+/* Header heading style */
 .header-contents h2 {
     font-weight: 500;
-    color: #aa5750;
-    font-size: max(4vw, 22px);
+    color: #aa5750; /* Golden brown font color */
+    font-size: max(4vw, 22px); /* Responsive font size */
 }
 
+/* Header contents style */
 .header-contents p {
     color: black;
     font-size: 1.3vw;
 }
 
+/* Header View Menu button style */
 .header-contents button {
-    border: none;
+    border: none; /* No border */
     color: white;
     font-weight: 500;
     padding: 1vw 2.3vw;
     background-color: #c6386e;
     font-size: max(1.2vw,13px);
-    border-radius: 50px;
+    border-radius: 50px; /* Oval border radius */
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.3s; /* Transition effect */
 }
 
+/* Hover effect for button */
 .header-contents button:hover {
-    background-color: #8D264D;
+    background-color: #8D264D; /* Hover background color */
 }
 
+/* Media query for medium screens */
 @media (max-width: 1050px) {
     
     .header-contents {
@@ -52,30 +58,40 @@
     }
 }
 
+/* Media query for small screens */
 @media (max-width: 750px) {
     .header{
         height: 70vw;
-        background: url('/header_mobile.png') no-repeat;
+        background: url('/header_mobile.png') no-repeat; /* Replace mobile background image */
         background-size: cover;
     }
    
+    /* Adjust maximum width, position from left, bottom, and gap of header contents */
     .header-contents {
-        max-width: 60%;
+        max-width: 60%; 
         left: 8vw;
         bottom: 15%;
         gap: 4vw;
     }
 
+    .header-contents p {
+        font-size: max(2vw, 10px);
+    }
+    /* Adjust font weight and font size of header heading */
     .header-contents h2 {
         font-weight: 500;
-        font-size: max(4.5vw, 30px);
+        font-size: max(5.5vw, 30px);
     }
-
-    .header-contents p {
-        display: none;
-    }
-
+    
+    /* Adjust padding of View Menu button */
     .header-contents button {
         padding: 2vw 4vw;
+    }
+}
+
+@media (max-width:480px) {
+    /* Remove header content in smaller screen */
+    .header-contents p {
+        display: none;
     }
 }

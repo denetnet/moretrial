@@ -1,8 +1,3 @@
-# React + Vite
+# Source Codes for the Project on Improving Customer Satisfaction through the Development of an Improved User Interface Design for the Online Ordering System of the “Sweet Confections Pastry Shop”
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+CMSC 207 Web Programming and Development Final Project

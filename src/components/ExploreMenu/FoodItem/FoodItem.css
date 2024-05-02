@@ -1,3 +1,4 @@
+/* Styles for food item display container with fade in animation*/
 .food-item {
     width: 100%;
     margin: auto;
@@ -7,27 +8,32 @@
     animation: fadeIn 1s;
 }
 
+/* Styles for food item image */
 .food-item-image {
     width: 100%;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 15px 15px 0px 0px; /* Rounded corners only on top */
 }
 
+/* Styles for food item description container */
 .food-item-info {
     padding: 20px;
 
 }
 
+/* Styles for the name of food items */
 .food-item-name {
     font-size: 20px;
     font-weight: 500;
 }
 
+/* Styles for the description of food items */
 .food-item-desc {
     color: #676767;
     font-size: 12px;
     margin-top: 5px;
 }
 
+/* Styles for the price of food items */
 .food-item-price {
     color: #B05B3B;
     font-size: 22px;
@@ -35,10 +41,12 @@
     margin: 10px 0px;
 }
 
+/* Style for the food item image container */
 .food-item-img-container {
     position: relative;
 }
 
+/* Styles for the food item add to cart button */
 .food-item-img-container .add {
     width: 35px;
     position: absolute;
@@ -48,6 +56,7 @@
     border-radius: 50%;
 }
 
+/* Styles for the food item counter */
 .food-item-counter {
     position: absolute;
     bottom: 15px;
@@ -60,21 +69,26 @@
     background-color: white;
 }
 
+/* Styles for food image within counter */
 .food-item-counter img {
     width: 30px;
 }
 
+/* Media query for small screens */
 @media (max-width: 480px) {
+    /* Hide food description on small screens */
     .food-item-desc {
         display:none
     }
 
+    /* Adjust font size and height for food item name  */
     .food-item-name {
         font-size: 14px;
         font-weight: 400;
         height: 30px;
     }
 
+    /* Adjust font size of price */
     .food-item-price {
         font-size: 18px;
     }

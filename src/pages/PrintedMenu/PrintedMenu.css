@@ -1,7 +1,9 @@
+/* Printed  Menu width set to 100% */
 .printed-menu img {
     width: 100%;
 }
 
+/* Style "Printed Menu" heading */
 .printed-menu h1 {
     display: flex;
     justify-content: center;

@@ -1,24 +1,24 @@
 import React, { useState } from "react";
 import "./LoginPopup.css";
-import { assets } from "../../assets/assets";
+import { assets } from "../../assets/assets"; //To import images from assets
 
 const LoginPopup = ({ setShowLogin }) => {
-  const [currState, setCurrState] = useState("Login");
+  const [currState, setCurrState] = useState("Login"); // State for current state of login popup
 
   return (
     <div className="login-popup">
       <form className="login-popup-container">
         <div className="login-popup-title">
-          <h2>{currState}</h2>
+          <h2>{currState}</h2> {/* Display current state */}
           <img
-            onClick={() => setShowLogin(false)}
+            onClick={() => setShowLogin(false)} // Close button onClick handler
             src={assets.cross_icon}
             alt="cross icon"
           />
         </div>
         <div className="login-popup-inputs">
-          {currState === "Login" ? (
-            <></>
+          {currState === "Login" ? ( // Conditional rendering for name input
+            <></> // Empty fragment if state is "Login"
           ) : (
             <input type="text" placeholder="Name" required />
           )}
@@ -31,7 +31,7 @@ const LoginPopup = ({ setShowLogin }) => {
           <input type="checkbox" required />
           <p>By continuing, I agree to the terms of use and privacy policy</p>
         </div>
-        {currState === "Login" ? (
+        {currState === "Login" ? ( // Conditional rendering for login/signup link
           <p>
             Create a new account?{" "}
             <span onClick={() => setCurrState("Sign Up")}>Click here</span>
@@ -47,4 +47,4 @@ const LoginPopup = ({ setShowLogin }) => {
   );
 };
 
-export default LoginPopup;
+export default LoginPopup; // Export LoginPopup component

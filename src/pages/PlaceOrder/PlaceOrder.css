@@ -1,3 +1,4 @@
+/* Styles for the place order container */
 .place-order {
     display: flex;
     align-items: start;
@@ -6,17 +7,20 @@
     margin-top: 100px;
 }
 
+/* Styles for the left section of the place order */
 .place-order-left {
     width: 100%;
     max-width: max(100%);
 }
 
+/* Styles for the title "Delivery Information" in the left section */
 .place-order-left .title {
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 50px;
 }
 
+/* Styles for input fields in the left section */
 .place-order-left input {
     margin-bottom: 15px;
     width: 100%;
@@ -26,38 +30,42 @@
     outline-color: lightcoral;
 }
 
+/* Styles for multiple fields in the left section (to make them side by side) */
 .place-order-left .multi-fields {
     display: flex;
     gap: 10px;
 }
 
+/* Styles for the right section of the place order */
 .place-order-right {
     margin-top: 50px;
     width: 100%;
     max-width: max(30%, 500px);
 }
 
+/* Styles for the Proceed to Payment Button */
 .place-order .cart-total button {
     margin-top: 30px;
 }
 
+/* Styles for Payment Details heading */
 .cart-total h2 {
     font-size: 30px;
     font-weight: 600;
 }
 
-
+/* Media query for smaller screens */
 @media (max-width: 750px) {
     .place-order {
-        flex-direction: column;
+        flex-direction: column; /* Change flex direction to column for easier mobile browsing */
     }
 
     .place-order-right {
-        margin-top: 0px;
+        margin-top: 0px; /* Reset margin top */
     }
 
     .place-order-left .multi-fields {
-        flex-direction: column;
-        gap: 0px;
+        flex-direction: column; /* Change flex direction to column so inputs can be entered easily */
+        gap: 0px; /* Reset gap size */
     }
 }

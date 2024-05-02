@@ -1,17 +1,17 @@
+/* Login popup container styles */
 .login-popup {
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    background-color: #00000090;
-    display: grid;
-    z-index: 2;
+    width: 100%; /* Full screen width */
+    height: 100%; /* Full screen height */
+    background-color: #00000090; /* Translucent dark grey background */
+    display: grid; /* Use grid layout */
+    z-index: 2; /* Set stacking order to be above the homepage when clicked*/
     position: fixed;
 }
 
+/* Styles for login popup container */
 .login-popup-container {
     place-self: center;
-    width: max(23vw 330px);
+    width: max(23vw 330px); /* Responsive width */
     color: #808080;
     background-color: white;
     display: flex;
@@ -20,27 +20,31 @@
     padding: 25px 30px;
     border-radius: 8px;
     font-size: 14px;
-    animation: fadeIn 0.5s;
+    animation: fadeIn 0.5s; /* Fade-in animation */
 }
 
+/* Title of the login popup styles */
 .login-popup-title {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; /* Align items vertically */
     color: black;
 }
 
+/* Close button styles */
 .login-popup-title img {
     width: 16px;
     cursor: pointer;
 }
 
+/* Input container styles */
 .login-popup-inputs {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
+/* Input fields sytles */
 .login-popup-inputs input {
     outline: none;
     border: 1px solid #c9c9c9;
@@ -48,6 +52,7 @@
     border-radius: 4px;
 }
 
+/* Button styles */
 .login-popup-container button {
     border: none;
     padding: 10px;
@@ -58,6 +63,7 @@
     cursor: pointer;
 }
 
+/* Login conditions section styles */
 .login-popup-condition {
     display: flex;
     align-items: start;
@@ -66,10 +72,12 @@
 
 }
 
+/* Checkbox style */
 .login-popup-condition input {
     margin-top: 3px;
 }
 
+/* Additional info in the login popup (agree to terms of use/privacy policy) */
 .login-popup p span {
     color: lightcoral;
     font-weight: 500;

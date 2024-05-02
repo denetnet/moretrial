@@ -1,10 +1,12 @@
 import React from "react";
-import "./AboutUs.css";
-import { assets } from "../../assets/assets";
+import "./AboutUs.css"; // Import styles
+import { assets } from "../../assets/assets"; // Import images from assets
 
 const AboutUs = () => {
   return (
     <div className="about-us">
+      {" "}
+      {/* AboutUs container */}
       <img src={assets.bakery} alt="bakery image" />
       <h1>About Us</h1>
       <br />

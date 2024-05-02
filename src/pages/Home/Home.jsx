@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 import "./Home.css";
-import Header from "../../components/Header/Header";
-import ExploreMenu from "../../components/ExploreMenu/ExploreMenu";
-import FoodDisplay from "../../components/FoodDisplay/FoodDisplay";
+import Header from "../../components/Header/Header"; // Import Header component
+import ExploreMenu from "../../components/ExploreMenu/ExploreMenu"; // Import ExploreMenu component
+import FoodDisplay from "../../components/FoodDisplay/FoodDisplay"; // Import FoodDisplay component
 
 const Home = () => {
-  const [category, setCategory] = useState("All");
+  const [category, setCategory] = useState("All"); // State for selected category
   return (
     <div>
-      <Header />
-      <ExploreMenu category={category} setCategory={setCategory} />
-      <FoodDisplay category={category} />
+      <Header /> {/* Render Header component */}
+      <ExploreMenu category={category} setCategory={setCategory} />{" "}
+      {/* Render ExploreMenu component */}
+      <FoodDisplay category={category} /> {/* Render FoodDisplay component */}
     </div>
   );
 };

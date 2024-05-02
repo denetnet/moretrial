@@ -1,16 +1,20 @@
+/* About Us page restauranta image styles */
 .about-us img {
     display: flex;
-    height: 34vw;
+    height: 34vw; /* Set height relative to viewport width */
     margin: 30px auto;
     justify-content: center;
     position: relative;
 }
 
+/* Heading text styles */
 .about-us h1 {
     display: flex;
     justify-content: center;
     color: brown;
 }
+
+/* Paragraph text styles */
 .about-us p {
     text-align: justify;
 }

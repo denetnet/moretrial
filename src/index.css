@@ -1,38 +1,45 @@
+/* Import "Outfit" font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
+/* global style for all elements */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Outfit;
-  scroll-behavior: smooth;
+  font-family: Outfit; /* Set default font-family to Outfit */
+  scroll-behavior: smooth; /* Smooth scrolling behavior */
 }
 
+/* Set the minimum height of the body to 100% of viewport height */
 body {
   min-height: 100vh;
 }
 
+/* Styles for anchor elements */
 a {
-  text-decoration: none;
-  color:inherit;
+  text-decoration: none; /* Remove underline from anchor elements */
+  color:inherit; /* Inherit colors from parent element */
 }
 
+/* Styles for the main container of the app */
 .app {
-  width: 80%;
-  margin: auto;
+  width: 80%; /* Set width to 80% */
+  margin: auto; /* Center the app container horizontally */
 }
 
+/* Animation keyframes for fadeIn effect */
 @keyframes fadeIn {
   0% {
-    opacity: 0;
+    opacity: 0; /* Initial opacity set to 0 */
   }
   100% {
-    opacity: 1;
+    opacity: 1; /* Final opacity set to 1 */
   }
 }
 
+/* Media query for smaller screens */
 @media (max-width: 750px) {
   .app {
-    width: 90%;
+    width: 90%; /* wider width area for smaller screens */
   }
 }

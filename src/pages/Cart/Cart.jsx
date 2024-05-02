@@ -1,13 +1,13 @@
 import React, { useContext } from "react";
 import "./Cart.css";
-import { StoreContext } from "../../context/StoreContext";
-import { useNavigate } from "react-router-dom";
+import { StoreContext } from "../../context/StoreContext"; // Import StoreContext
+import { useNavigate } from "react-router-dom"; // Import useNavigate for programmatic navigation
 
 const Cart = () => {
   const { cartItems, food_list, removeFromCart, getTotalCartAmount } =
-    useContext(StoreContext);
+    useContext(StoreContext); // Destructure required functions and state from StoreContext
 
-  const navigate = useNavigate();
+  const navigate = useNavigate(); // Initialize navigate function for programmatic navigation
 
   return (
     <div className="cart">
@@ -24,8 +24,10 @@ const Cart = () => {
         </div>
         <br />
         <hr />
+        {/* Map through food_list to display items in cart */}
         {food_list.map((item, index) => {
           if (cartItems[item._id] > 0) {
+            // Check if item exists in cart
             return (
               <div>
                 <div className="cart-items-title cart-items-item">
@@ -34,6 +36,7 @@ const Cart = () => {
                   <p>₱ {item.price}.00</p>
                   <p>{cartItems[item._id]}</p>
                   <p>₱ {item.price * cartItems[item._id]}.00</p>
+                  {/* Clickable cross icon to remove item from cart */}
                   <p onClick={() => removeFromCart(item._id)} className="cross">
                     ✖️
                   </p>
@@ -45,6 +48,7 @@ const Cart = () => {
         })}
       </div>
       <div className="cart-add-more">
+        {/* Button to navigate back to the home page to add more items */}
         <button onClick={() => navigate("/")}>ADD MORE ITEMS</button>
       </div>
       <div className="cart-bottom">
@@ -53,19 +57,23 @@ const Cart = () => {
           <div>
             <div className="cart-total-details">
               <p>Subtotal</p>
+              {/* Display total cart amount */}
               <p>{getTotalCartAmount()}</p>
             </div>
             <hr />
             <div className="cart-total-details">
               <p>Delivery Fee</p>
+              {/* Hardcode delivery fee */}
               <p>{59}</p>
             </div>
             <hr />
             <div className="cart-total-details">
               <b>Total</b>
-              <b>Php {getTotalCartAmount() + 59}</b>
+              {/*Add the delivery fee to total amount */}
+              <b>Php {getTotalCartAmount() + 59}</b>{" "}
             </div>
           </div>
+          {/* Button to proceed to checkout */}
           <button onClick={() => navigate("/order")}>
             PROCEED TO CHECKOUT
           </button>

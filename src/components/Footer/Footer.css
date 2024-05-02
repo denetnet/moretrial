@@ -1,28 +1,31 @@
+/* Footer container styles */
 .footer {
     color: #eae3d1;
     background-color: #444444;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Arrange items vertically */
     align-items: center;
     gap: 20px;
     padding: 20px 8vw;
-    padding-top: 40px;
+    padding-top: 40px; /* Additional top padding */
     font-weight: 200;
     margin-top: 100px;
-    font-size: max(0.8vw, 14px);
+    font-size: max(0.8vw, 14px); /* Responsive font size */
 }
 
+/* Styles of Footer contents */
 .footer-content {
     width: 100%;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 80px;
+    grid-template-columns: 2fr 1fr 1fr; /* Create three grid columns */
+    gap: 80px; /* Spacing between columns */
 }
-
+/* Styles for the left footer content */
 .footer-content-left > img {
     height: 70px;
 }
 
+/* Styles for the left, center, and right footer content */
 .footer-content-left, .footer-content-right, .footer-content-center {
     display: flex;
     flex-direction: column;
@@ -30,30 +33,36 @@
     gap: 10px;
 }
 
+/* Styles for the list items in the left, center, and right footer content */
 .footer-content-left li, .footer-content-right li, .footer-content-center li{
     list-style: none;
     margin-bottom: 10px;
     cursor: pointer;
 }
 
+/* Hover effect for center-aligned list items i.e. Home, About Us, Privacy Policy, Printed Menu */
 .footer-content-center li:hover {
     text-decoration: underline;
 }
 
+/* Styles for headings in right and center-aligned content */
 .footer-content-right h2, .footer-content-center h2{
     color: #eae3d1;
 }
 
+/* Styles for social media icons in footer */
 .footer-social-icons img {
     width: 40px;
     margin-right: 15px;
     cursor: pointer;
 }
 
+/* Hover effect for social icons, enlarge by x 1.1 in size */
 .footer-social-icons img:hover {
     transform: scale(1.1)
 }
 
+/* Horizontal rule style for footer */
 .footer hr {
     width: 100%;
     height: 2px;
@@ -62,15 +71,16 @@
     border: none;
 }
 
+/* Media query for smaller screens */
 @media (max-width:1024px) {
     .footer {
-        font-size: 13px;
-        padding-top: 40px;
+        font-size: 13px; /* Smaller font size */
+        padding-top: 40px; /* Adjust top padding */
     }
     
     .footer-content {
         display: flex;
-        flex-direction: column;
+        flex-direction: column; /* Arrange items vertically */
         gap: 35px;
     }
 
@@ -79,10 +89,12 @@
         font-size: 10px;
     }
 
+    /* Adjust margin for list items */
     .footer-content-left li, .footer-content-right li, .footer-content-center li{
-        margin-bottom: 5px;
+        margin-bottom: 5px; /* Reduce bottom margin */
     }
 
+    /* Adjust height of logo */
     .footer-content-left > img {
         height: 60px;
     }

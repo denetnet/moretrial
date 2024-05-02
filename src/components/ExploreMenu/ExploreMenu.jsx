@@ -1,6 +1,6 @@
 import React from "react";
-import "./ExploreMenu.css";
-import { menu_list } from "../../assets/assets";
+import "./ExploreMenu.css"; //import styles
+import { menu_list } from "../../assets/assets"; //Import menu list images
 
 const ExploreMenu = ({ category, setCategory }) => {
   return (
@@ -11,6 +11,7 @@ const ExploreMenu = ({ category, setCategory }) => {
         categories below.
       </p>
       <div className="explore-menu-list">
+        {/* Mapping through the menu list data */}
         {menu_list.map((item, index) => {
           return (
             <div
@@ -22,6 +23,7 @@ const ExploreMenu = ({ category, setCategory }) => {
               key={index}
               className="explore-menu-list-item"
             >
+              {/* Image for each menu item */}
               <img
                 className={category === item.menu_name ? "active" : ""}
                 src={item.menu_image}

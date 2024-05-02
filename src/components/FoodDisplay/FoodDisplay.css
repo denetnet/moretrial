@@ -1,14 +1,17 @@
+/* food display container styles */
 .food-display {
     margin-top: 30px;
 }
 
+/* Styles for the menu heading "Tasty foods made with love" */
 .food-display h2 {
     font-size: max(2vw, 24px);
     font-weight: 600;
     text-align: center;
-    color: #753422;
+    color: #753422; /* dark brown text */
 }
 
+/* Styles for the food item display container */
 .food-display-list{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px,1fr));
@@ -17,12 +20,13 @@
     row-gap: 50px;
 }
 
+/* Media query for smaller screens */
 @media (max-width: 480px) {
     .food-display-list{
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive and smaller grid layout */
         margin-top: 30px;
-        gap: 20px;
-        row-gap: 30px;
+        gap: 20px; /* Smaller gap */
+        row-gap: 30px; /* Smaller row-gap */
     }
 }

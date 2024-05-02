@@ -1,16 +1,21 @@
+/* Styles for the "Privacy Policy" heading */
 .privacy-policy h1 {
     display: flex;
     justify-content: center;
     color: brown;
 }
 
+/* Style for p elements */
 .privacy-policy p {
     text-align: justify;
 }
 
+/* Style for subheadings in the privacy policy page */
 .privacy-policy h2 {
     color: lightcoral;
 }
+
+/* Style for li elements within the privacy-policy class */
 .privacy-policy li {
-    list-style-type: none;
+    list-style-type: none; /* Remove bullet points */
 }

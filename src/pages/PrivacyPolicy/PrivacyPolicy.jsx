@@ -1,8 +1,10 @@
 import React from "react";
 import "./PrivacyPolicy.css";
 
+// Functional component definition for PrivacyPolicy
 const PrivacyPolicy = () => {
   return (
+    // Container div for 'privacy-policy'
     <div className="privacy-policy">
       <h1>Privacy Policy of Sweet Confections Pastry Shop</h1>
       <br />
